@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 import time
 #create a class that creates a collection titled amazon_reviews in mongoDB then inserts the data from the xlsx file into the collection
 
-mongoDBConnection = 'mongodb+srv://garytwotimes:LRcstOD6ZUblNJ26@cluster0.i7c5ze6.mongodb.net/test'
+mongoDBConnection = 'mongodb+srv://username:password@cluster0.i7c5ze6.mongodb.net/test'
 
 
 class SendToDB():
@@ -64,7 +64,7 @@ class SendToDB():
     #     conn = pg.connect(user='postgres', password="0149", host='localhost', port='5433')
     #     df = pd.read_excel('dags/excelData/reviews.xlsx')
     #     df['comment'] = df['comment'].astype(str)
-    #     engine = create_engine('postgresql://postgres:0149@localhost:5433/airflowTestingDB')
+    #     engine = create_engine('postgresql://postgres:password@localhost:5433/airflowTestingDB')
     #     #if any of the data being entered is a duplicate move to next review
     #     df = df.drop_duplicates(subset=['product_name','review_title', 'comment', 'rating', 'date', 'username', 'profile_url', 'verified_purchase'], keep='first')
     #     df = df.reset_index(drop=True)
